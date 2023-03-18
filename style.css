@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text:1.5rem;
+    --head:calc(1rem + 5vw)
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background:  
+    url(https://c1.wallpaperflare.com/preview/965/993/80/background-baked-cheese-circle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: orem 1rem;
+    color: rgb(252, 227, 86);
+}
+
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+margin-left: 3rem;
+font-size: var(--text);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+
+.hero-text{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    opacity: 0.5;
+}
+
+.hero-text a{
+    color: rgb(255, 255, 255);
+    background-color: #ff2e2ee1;
+    font-weight: 900;
+    font-size: var(--text);
+    padding: 0.8rem 1rem;
+    margin: 0.8rem  auto;
+    display: block;
+    transition: opacity 250ms linear5;
+}
+.hero-text a:hover{
+    opacity: 0.8;
+}
+
+.hero-text h2 {
+    font-size: var(--head);
+}
+
+.hero-text p {
+    font-size: 3rem;
+}
